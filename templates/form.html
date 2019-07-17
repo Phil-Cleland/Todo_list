@@ -1,0 +1,18 @@
+<html>
+	<head><title>form/Phil App</title></head>
+		<body>
+			<h1>To do list</h1>
+			<form action ="/add_todo">
+			<label>Item todo:<br>
+				<input type="text" name="item" value="">
+				<input type="submit" value="Submit">
+			</label>
+			</form>
+			<ol>
+				<!-- for loop logic of jinja template -->
+				{%for item in items%}
+				<li>{{item}}</li>
+				{%endfor%}
+			</ol>
+		</body>
+</html>
