@@ -1,1 +1,1 @@
-wbe: python todo_server.py
+web: python todo_server.py
