@@ -1,6 +1,4 @@
-
 from flask import *
-
 import json
 import os
  
@@ -27,11 +25,11 @@ def get_todos():
 
 @app.route('/foo/<name>')
 def foo(name):
-    return render_template('index.html', to=name)
+    return render_template('form.html', to=name)
  
 if __name__ == '__main__':
-    port = os.environ.get('PORT',5000)
-    app.run(debug=True, host='0.0.0.0', port = port)
+    port = os.environ.get('PORT', 5000)
+    app.run(debug=True, host='0.0.0.0', port=port)
     
 
 
