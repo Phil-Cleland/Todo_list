@@ -25,7 +25,7 @@ def get_todos():
 
 @app.route('/foo/<name>')
 def foo(name):
-    return render_template('index.html', to=name)
+    return render_template('form.html', to=name)
  
 if __name__ == '__main__':
     port = os.environ.get('PORT', 5000)
